@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+        <title>PakPhones</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="style.css">      
+    </head>
+
+    <body>
+        <section id="header">
+            <a href="#">
+                <img src="image/logo.png" class="logo" alt="">
+            </a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Products</a></li>
+                    <li><a href="track.html">Track Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="image/products/p1.png" width="100%" id="MainImg" alt="">
+
+                <div class="small-img-group">
+
+                    <div class="small-img-col">
+                        <img src="image/products/p1.png" width="100%" class="small-img" alt="">
+                    </div>
+
+                    <div class="small-img-col">
+                        <img src="image/products/p2.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/products/p3.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/products/p4.png" width="100%" class="small-img" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h6>Home / Mobile Phones</h6>
+                <h4>iPhone 7 32GB (Black) - WARRANTY + DELIVERY - D5723</h4>
+                <h2>PKR 28,000</h2>
+
+                <!-- Configuration -->
+                <div>
+                    <h3>Item overview</h3>
+ 
+                    <div class="item-overview">
+                    <button>COLOR <br> Black</button>
+                    <button>AGE <br> More Than 3 Years</button>
+                    <button>CONDITION <br> Refurbished</button>
+                    <button>MEMORY <br> 2GB</button></div>
+                </div>
+
+                <div>
+                    <h3><br>Additional Details</h3>
+
+                    <div>Warranty &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔<br>
+                        PTA Approved &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✔<br>
+                        Damages on Device ❌<br>
+                        Carrier Lock &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ❌<br>
+                        Storage Capacity &nbsp;&nbsp;&nbsp;&nbsp; 32 GB</div>                 
+
+                </div>
+
+                <br> <button class="cart-btn">Add To Cart</button>
+
+                <h4>Description</h4>
+                <span>3-month warranty on all Refurbished PakPhones premium phones!* The device has 1 part replaced by PakPhones premium technician.
+                What you see is what you get!
+                There are no tricks, photoshops or stock images, what you see in the pictures is identical in every way to the product you will receive. All devices sold via PakPhones premium have been verified and inspected by a professional to ensure you get a quality pre-loved device.
+                We deliver!
+                Any product listed by PakPhones premium can be delivered to your doorstep at any time. Within reason of course.
+                Battery health - Above 85%.
+
+                <h2>Inspection Report:</h2>
+                <a href="file:///C:/Users/user/Desktop/Website/image/doc.pdf">View Report</a>
+            </div>
+
+        </section>
+
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function(){
+                MainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                MainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                MainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                MainImg.src = smallimg[3].src;
+            }
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
